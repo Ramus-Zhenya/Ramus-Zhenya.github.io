@@ -23,12 +23,17 @@
 			<div class="logo_wrap">
 				<img src="assets/i/svg/head_logo_cyan.svg">
 			</div>	
-		<strong class="h6 mb-0">Tvoy Master</strong>
+<!--		<strong class="h6 mb-0">Tvoy Master</strong>-->
 		</a>
 		
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
 			aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+<!--			<span class="navbar-toggler-icon"></span>-->
+			<div id="toggle">
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+			</div>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarText">
 			<ul class="navbar-nav m-auto">
@@ -37,6 +42,12 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">услуги</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">наши работы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">статьи</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">контакты</a>
@@ -704,10 +715,7 @@
 <!---------------------/услуги/-------------------->
 
 <!-------------------О компании-------------------->
-<div class="container-fluid pl-0 pr-0 mb-5"style="background-image:url(assets/i/h_progres_bg.png);
-												background-repeat: no-repeat;
-												background-position: center bottom;
-												background-size:100%;">
+<div class="container-fluid pl-0 pr-0">
 <div class="wrap_opacity pt-5">
 <div class="container mb-4">
 <!--------------------видос--------------------->
@@ -720,7 +728,7 @@
 	<div class="baner_T_M">
 		<img src="assets/i/svg/tvoy_master_about_home_3.svg">
 	</div>
-		<div class="fullscreen-bg z-depth-1 rounded  wow fadeIn" data-wow-delay="0.3s">
+		<div class="fullscreen-bg z-depth-1 rounded wow fadeIn" data-wow-delay="0.3s">
 					
 			<video loop muted autoplay poster="assets/i/svg/bg_TM_logo.svg" class="fullscreen-bg__video">
 				<source src="assets/i/video/bg_header.mp4" type="video/mp4">
@@ -732,17 +740,23 @@
 		<div class="video_card_caption card  wow slideInDown" data-wow-delay="0.1s">
 			<div class="card-body text-center">
 				<h5 class="card-title"><strong>МЫ РАБОТАЕТ НА РЫНКЕ СТРОИТЕЛЬСТВА И РЕМОНТА</strong></h5>
-				<h5 class="indigo-text"><strong>С 2003 ГОДА.</strong></h5>
-
+				<h5 class="cyan-text"><strong>С 2003 ГОДА.</strong></h5>
+				
+<!--
 				<a class="icons-sm tw-ic"><i class="fa fa-odnoklassniki"> </i></a>
 				<a class="icons-sm li-ic"><i class="fa fa-vk"> </i></a>
 				<a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+-->
 			</div>
 		</div>	
 	</div>
 </div><!--row -->
 <!-------------------/видос/-------------------->
-<div class="row well-4">
+<div class="col-10 mt-5 pt-3 ml-auto mr-auto text-center">
+
+</div>
+<!--
+<div class="row ">
 	<article class="col">
 					
 			<h4 class="mt-1">
@@ -770,7 +784,9 @@
 			<p class="card-text">Воспользуйтесь преимуществами компонентов, разработанных с минимальными зависимостями и проверенными на гибкость, доступность и интернационализацию</p>
                 
 	</article>
-</div>  <!--row -->
+</div>  
+-->
+<!--row -->
 <hr>		
 <!-----------------достижения------------------>			
 <div class="row">
@@ -779,9 +795,11 @@
 							<hr class=" hr-cyan my-4 wow fadeInDown" data-wow-delay="0.4s">
 						</div>
 <div class="col-lg-6 col-md-12 mb-4">
-	<div class="mb-4 d-flex align-items-center">
+	<div class="mb-4 text-center">
 		<span class="display-3 font-weight-bold">15</span>
-		<p class="h3 card-subtitle">лет опыта в строительстве и ремонте</p>
+		<p class="h3 card-subtitle mb-4">лет опыта в строительстве и ремонте</p>
+		<hr class=" hr-cyan my-4 wow fadeInDown" data-wow-delay="0.4s">
+		<a href="#" class="cyan-text"><u>Статьи и обзоры</u></a>
 	</div>
 <div class="w-100"></div>
 	<div class="card-deck">
@@ -793,7 +811,7 @@
 			</div>
 		</div>
 		<div class="card rgba-grey-strong">
-			<div class="card-body text-center py-5">
+			<div class="card-body text-center white-text py-5">
 				<p class="h5 mb-2">работали в качестве генподрядчиков в г. Москва.</p>
 				<p class="h5">субподрядчикка с тремя организациями</p>
 			</div>
@@ -804,51 +822,67 @@
 <div class="col-lg-6 col-md-12">
 	<div class="card-deck">
 		<div class="card  rgba-white-strong">
-			<div class="card-body text-center py-5 px-5">
+			<div class="card-body text-center cyan-text py-5 px-5">
 				<p class="h5">Более</p>
-				<span class="display-3 font-weight-bold">400</span>
+				<span class="display-3  font-weight-bold">400</span>
 				<p class="h5">сделанных квартир</p>
 			</div>
 		</div>
 		<div class="card rgba-black-strong">
-			<div class="card-body text-center cyan-text py-5">
+			<div class="card-body text-center white-text py-5">
 				<p class="h5 mb-2">несчетное количество мелких и крупных ремонтов</p>
 				<p class="h5">офисов , магозинов , ресторанов </p>
 			</div>
 		</div>
 	</div>
 <div class="w-100"></div>								
-	<div class="mt-4 d-flex align-items-center">
+	<div class="mt-4 text-center">
 		<span class="display-3 font-weight-bold">86</span>
-		<p class="h3 card-subtitle">построиных домов и котеджей</p>
+		<p class="h3 card-subtitle mb-4">построиных домов и котеджей</p>
+		<hr class=" hr-cyan my-4 wow fadeInDown" data-wow-delay="0.4s">
+		<a href="#" class="cyan-text"><u>Все проекты</u></a>
 	</div>
 </div>
-</div>         <!--row -->
+</div><!--row -->
 <!-----------------достижения------------------>
-<!----------------Нам доверяют----------------->
-<div class="row">
-	<div class="col-12">
-		<h2 class="h2 font-weight-bold text-center mt-4 mb-2">«Нам доверяют»</h2>
-		<hr class=" hr-cyan my-4 wow fadeInDown" data-wow-delay="0.4s">
-	</div>		
-				<div class="col-3">
-					<img src="assets/i/brands/hilti_w.svg">
-				</div>
-				<div class="col-3">
-					<img src="assets/i/brands/hilti_w.svg">
-				</div>
-				<div class="col-3">
-					<img src="assets/i/brands/hilti_w.svg">
-				</div>
-				<div class="col-3">
-					<img src="assets/i/brands/hilti_w.svg">
-				</div>
-</div>         <!--row -->
-<!---------------/Нам доверяют/---------------->
-
 </div><!--container -->
 </div><!--wrap_opacity-->
+</div><!--container-->
+<!----------------Нам доверяют----------------->
+<div class="container-fluid pl-0 pr-0 "
+											style="background-image:url(assets/i/h_progres_bg.png);
+												background-repeat: no-repeat;
+												background-position: center bottom;
+												background-attachment: fixed;
+												background-size:cover">
+<div class="container text-center pb-4">											
+<div class="row py-5 ">
+	<div class="col-12">
+		<h2 class="h2 font-weight-bold text-center white-text mt-4 mb-2">«Клиенты которые нам доверяют»</h2>
+		<hr class=" hr-cyan my-4 wow fadeInDown" data-wow-delay="0.4s">
+		<p class="text-white text-center">При оказании услуг мы стремимся к выстраиванию
+		длительных партнерских отношений с нашими клиентами. 
+		Мы уверены, что опыт наших специалистов и гибкий подход к обсуждению условий сотрудничества
+		помогут оптимальным образом решить, стоящие перед нами задачи.</p>
+		</div>		
+				<div class="col-3">
+					<img src="assets/i/brands/pro-dekor_w.svg">
+				</div>
+				<div class="col-3">
+					<img src="assets/i/brands/pro-dekor_w.svg">
+				</div>
+				<div class="col-3">
+					<img src="assets/i/brands/pro-dekor_w.svg">
+				</div>
+				<div class="col-3">
+					<img src="assets/i/brands/pro-dekor_w.svg">
+				</div>
+				
+</div><!--row -->
+<a href="#" class="cyan-text"><u>Узнайте больше</u></a>
+</div>	
 </div><!--container-fluid-->
+<!---------------/Нам доверяют/---------------->
 <!---------------/ О компании /------------------->
 <!--------------- наши работы -------------------->
 <div class="container">
@@ -957,7 +991,6 @@
 	
 		</div>
 -->
-
 <!----------------------слайдер--------------------->
 </div>
 </div>
@@ -966,12 +999,78 @@
 <!----------------- приимущества ------------------->
 
 <section class="container advantages">
+   <!-----------------достижения------------------>			
+<div class="row">
+<div class="col-12">
+	<h2 class="h2 font-weight-bold text-center mt-4 mb-2">Почему выбирают нас</h2>
+	<hr class=" hr-cyan my-4 wow fadeInDown" data-wow-delay="0.4s">
+</div>
+<div class="row mb-4">
+
+
+			<div class="col-3 text-center cyan-text">
+				<div class="icon_circel">
+					<img src="assets/i/icon/tehnoloje.svg" alt="">
+				</div>
+				<p class="h5">Современные технологии и материалы</p>
+			</div>
+
+			<div class="col-3 text-center cyan-text">
+				<div class="icon_circel">
+					<img src="assets/i/icon/money.svg" alt="">
+				</div>
+				<p class="h5 mb-2">Комплексное предоставление услуг</p>
+			</div>
+
+			<div class="col-3 text-center cyan-text">
+				<div class="icon_circel">
+					<img src="assets/i/icon/money.svg" alt="">
+				</div>
+				<p class="h5">Честные и адекватные цены.</p>
+			</div>
+	
+			<div class="col-3 text-center cyan-text">
+				<div class="icon_circel">
+            		<img src="assets/i/icon/people.svg" alt="">	
+        		</div>
+				<p class="h5 mb-2">Профессиональный коллектив</p>
+			</div>
+
+</div>
+	<div class="col-6 mt-4 text-center">
+		<span class="display-4 font-weight-bold">90%</span>
+		<p class="h3 mb-4">клиентов нас рекомендуют</p>
+	</div>						
+	<div class="col-6 mt-4 text-center">
+		<span class="display-4 font-weight-bold">60%</span>
+		<p class="h3 mb-4">заказов по рекомендации</p>
+	</div>
+
+	<div class="col-12 mt-4 text-center">
+		<span class="display-4 font-weight-bold">100%</span>
+		<p class="h3 mb-4">удовлетворенных клиентов</p>
+	</div>	
+
+
+</div><!--row -->
+   
+   
+   
+<!--
     <div class="row">
     	<div class="col-12">
 		<h2 class="h2 font-weight-bold text-center mt-4 mb-2">Почему выбирают нас</h2>
 		<hr class=" hr-cyan my-4 wow fadeInDown" data-wow-delay="0.4s">
 	</div>
     <ul class="col-md-6">
+       <li class="row mb-4 align-items-center">
+        <div class="icon_circel">
+            <img src="assets/i/icon/like.svg" alt="">	
+        </div>
+        <div class="col-10 text-left font-weight-bold">
+            90% наших клиентов нас рекомендуют друзьям
+        </div>
+        </li>
         <li class="row mb-4 align-items-center">
         <div class="icon_circel">
             <img src="assets/i/icon/people.svg" alt="">	
@@ -988,31 +1087,24 @@
             Современные технологии и материалы
         </div>
         </li>
-        <li class="row mb-4 align-items-center">
-        <div class="icon_circel">
-            <img src="assets/i/icon/money.svg" alt="">
-        </div>
-        <div class="col-10 text-left font-weight-bold">
-            Честные, адекватные цены. Смета окончательная
-        </div>
-        </li>
+        
 
     </ul>
     <ul class="col-md-6">
+       <li class="row mb-4 align-items-center">
+        <div class="icon_circel">
+            <img src="assets/i/icon/megaphone.svg" alt="">	
+        </div>
+        <div class="col-10 text-left font-weight-bold">
+           40% заказов по рекомендации
+        </div>
+        </li>
         <li class="row mb-4 align-items-center">
         <div class="icon_circel">
             <img src="assets/i/icon/people.svg" alt="">	
         </div>
         <div class="col-10 text-left font-weight-bold">
-            Стабильный профессиональный коллектив
-        </div>
-        </li>
-        <li class="row mb-4 align-items-center">
-        <div class="icon_circel">
-            <img src="assets/i/icon/tehnoloje.svg" alt="">
-        </div>
-        <div class="col-10 text-left font-weight-bold">
-            Современные технологии и материалы<
+           	Комплексное предоставление услуг
         </div>
         </li>
         <li class="row mb-4 align-items-center">
@@ -1023,12 +1115,183 @@
             Честные, адекватные цены. Смета окончательная
         </div>
         </li>
-
-    </ul>
+	</ul>
 
     </div>
+-->
 </section>
-<!--/Section: Features v.4-->
+<section class="container">
+<div class="col-12">
+	<h2 class="h3 font-weight-bold text-center dark-text mt-4 mb-4">Причины по которым стоит обротится к нам сейчас</h2>
+	
+</div>
+<div class="row mt-4 ">
+<div class="col-4">
+<div class="card h-100"
+   style=" background-image:url(assets/i/bg.jpeg);
+							background-repeat: no-repeat;
+							background-position: center bottom;
+							background-size:cover;">
+    <div class="card-header">
+
+    <h3 class="card-title cyan-text text-center font-weight-bold">Узнай стоимость будущего ремонта</h3></div>
+    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+        
+        
+        <p class="h5 text-center">до конции акции осталось</p>
+        <div class="count d-flex mb-4 justify-content-center">
+        	<div class="d-flex flex-column justify-content-center justify-content-center p-1 border-right">
+        		<span class="h1">10</span>
+        		<span class="count_data_item text-center">недель</span>
+        	</div>
+        	<div class="d-flex flex-column justify-content-center justify-content-center p-1 border-right">
+        		<span class="h1">10</span>
+        		<span class="count_data_item text-center">дней</span>
+        	</div>
+        	<div class="d-flex flex-column justify-content-center justify-content-center p-1 border-right">
+        		<span class="h1">10</span>
+        		<span class="count_data_item text-center">часов</span>
+        	</div>
+        	<div class="d-flex flex-column justify-content-center justify-content-center p-1 border-right">
+        		<span class="h1">10</span>
+        		<span class="count_data_item text-center">минут</span>
+        	</div>
+        	<div class="d-flex flex-column justify-content-center justify-content-center p-1 border-none">
+        		<span class="h1">10</span>
+        		<span class="count_data_item text-center">секунд</span>
+        	</div>
+        </div>
+        <h4 class="card-title text-center mb-4">замер и смета в подарок</h4>
+
+    </div>
+<div class="card-footer">
+	<form>
+    <p class="h5 mb-4 mb-4 text-center">Оставить заявку на бесплатный выезд замерщика</p>
+
+    <!-- Material input text -->
+    <div class="md-form">
+        <i class="fa fa-user prefix cyan-text"></i>
+        <input type="text" id="materialFormContactNameEx" class="form-control">
+        <label for="materialFormContactNameEx">Your name:</label>
+    </div>
+
+    <!-- Material input email -->
+    <div class="md-form">
+        <i class="fa fa-phone prefix cyan-text"></i>
+        <input type="email" id="materialFormContactEmailEx" class="form-control">
+        <label for="materialFormContactEmailEx">Your tel:</label>
+    </div>
+    
+
+
+    <div class="text-center mt-4">
+        <button class="btn cyan" type="submit">Send<i class="fa fa-paper-plane-o ml-2"></i></button>
+    </div>
+</form>
+</div>
+</div>
+</div>
+<div class="col-8">
+	<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text">Не берем проекты в работу ради количества, в ущерб качеству</p>
+		</div>
+	</div>
+	<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text">Используем материалы строго ГОСТ, СНиП</p>
+		</div>
+	</div>
+	<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text">Подбор, комплектация и доставка строительного материала</p>
+		</div>
+	</div>
+	<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text">Прорабатываем проекты как для заказчика так и для строителей</p>
+		</div>
+	</div>
+	<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text">Инженерный состав - с высшим строительным образованием</p>
+		</div>
+	</div>
+	<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text">Привлекательный уровень цен и окончательная смета</p>
+		</div>
+	</div>
+	<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text"> подберем для вас оптимальные строительные материалы</p>
+		</div>
+	</div>
+		<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text"> подберем для вас оптимальные строительные материалы</p>
+		</div>
+	</div>
+		<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text"> подберем для вас оптимальные строительные материалы</p>
+		</div>
+	</div>
+		<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text"> подберем для вас оптимальные строительные материалы</p>
+		</div>
+	</div>
+		<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text"> подберем для вас оптимальные строительные материалы</p>
+		</div>
+	</div>
+		<div class="d-flex mb-2 ">
+		<div class="col-1 mr-1">
+			<i class="fa fa-check fa-2x cyan-text"></i>
+		</div>
+		<div class="col-11">
+			<p class="font-weight-bold mb-4 dark-text"> подберем для вас оптимальные строительные материалы</p>
+		</div>
+	</div>
+	
+</div>
+</div>
+</section>
 <!----------------/ приимущества /------------------>
 
 
@@ -1039,8 +1302,8 @@
 
 <div class="container">
 <div class="row">
- <div class="col-lg-4 white">
-<div class="card-body contact">
+ <div class="col-lg-4 ">
+<div class="card-body white contact">
 <div class="card-img p-4">
 	<img src="assets/i/svg/head_logo_cyan.svg" alt="твой мастер">
 </div>
@@ -1086,6 +1349,7 @@
 
 </div>
 </div>
+<!--
 <div class="col-lg-8">
 <div class="card-body form">
 <div class="formHeader mb-1 pt-3">
@@ -1133,11 +1397,25 @@
 </form>
 </div>
 </div>
+-->
 </div>
 </div>
 </footer>    
 </main>
 <script src="assets/js/main.js"></script>
 <script>new WOW().init();</script>	
+<script>var target = $('.cyanbars');
+var targetPos = target.offset().top;
+var winHeight = $(window).height();
+var scrollTocyanbars = targetPos - winHeight;
+$(window).scroll(function(){
+	var winScrollTop = $(this).scrollTop();
+	if(winScrollTop > scrollTocyanbars){
+		//сработает когда пользователь доскроллит к элементу с классом .elem
+	}
+});</script>	
+<script>$("#toggle").click(function() {
+  $(this).toggleClass("on");
+});</script>	
 </body>
 </html>
