@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -977,57 +977,67 @@
 <!----------------- приимущества ------------------->
 
 <section class="container advantages">
-   <!-----------------достижения------------------>			
-<div class="row">
-<div class="col-12">
+   <!-----------------Почему выбирают нас------------------>
+   <div class="col-12">
 	<h2 class="h2 font-weight-bold text-center mt-4 mb-2">Почему выбирают нас</h2>
 	<hr class=" hr-cyan my-4 wow fadeInDown" data-wow-delay="0.4s">
-</div>
-<div class="row mb-4">
+</div>			
 
 
-			<div class="col-3 text-center cyan-text">
+<div class="row mb-4 mt-4">
+			<div class="col text-center cyan-text">
 				<div class="icon_circel">
 					<img src="assets/i/icon/tehnoloje.svg" alt="">
 				</div>
-				<p class="h5">Современные технологии и материалы</p>
+				<p class="h5">Современные<br> технологии и материалы</p>
 			</div>
-
-			<div class="col-3 text-center cyan-text">
+			
+			<div class="col text-center cyan-text">
 				<div class="icon_circel">
 					<img src="assets/i/icon/money.svg" alt="">
 				</div>
-				<p class="h5 mb-2">Комплексное предоставление услуг</p>
+				<p class="h5">Честные и адекватные<br>цены</p>
 			</div>
 
-			<div class="col-3 text-center cyan-text">
+			<div class="col text-center cyan-text">
 				<div class="icon_circel">
 					<img src="assets/i/icon/money.svg" alt="">
 				</div>
-				<p class="h5">Честные и адекватные цены.</p>
+				<p class="h5 mb-2">Комплексное<br>предоставление услуг</p>
 			</div>
-	
-			<div class="col-3 text-center cyan-text">
+
+			<div class="col text-center cyan-text">
 				<div class="icon_circel">
             		<img src="assets/i/icon/people.svg" alt="">	
         		</div>
 				<p class="h5 mb-2">Профессиональный коллектив</p>
 			</div>
-
 </div>
-	<div class="col-6 mt-4 text-center">
-		<span class="display-4 font-weight-bold">90%</span>
-		<p class="h3 mb-4">клиентов нас рекомендуют</p>
+</section>
+
+<section class="container-fluid count_procent" 
+								 style="background-image:url(assets/i/h_progres_bg.png);
+												background-repeat: no-repeat;
+												background-position: center bottom;
+												background-attachment: fixed;
+												background-size:cover">
+<div class="container">
+<div class="row mb-5 mt-5 pt-5 pb-5">
+	<div class="col-4 mt-4 text-center white-text">
+		<span class="count display-3 font-weight-bold">90</span>%
+		<p class="h5 mb-4">клиентов нас рекомендуют</p>
 	</div>						
-	<div class="col-6 mt-4 text-center">
-		<span class="display-4 font-weight-bold">60%</span>
-		<p class="h3 mb-4">заказов по рекомендации</p>
+	<div class="col-4 mt-4 text-center white-text">
+		<span class="count2 display-3 font-weight-bold">60</span>%
+		<p class="h5 mb-4">заказов по рекомендации</p>
 	</div>
-	<div class="col-12 mt-4 text-center">
-		<span class="display-4 font-weight-bold">100%</span>
-		<p class="h3 mb-4">удовлетворенных клиентов</p>
+	<div class="col-4 mt-4 text-center white-text">
+		<span class="count3 display-3 font-weight-bold">100</span>%
+		<p class="h5 mb-4">удовлетворенных клиентов</p>
 	</div>	
 </div><!--row -->
+</div>
+</section>
 <!--
     <div class="row">
     	<div class="col-12">
@@ -1091,7 +1101,7 @@
 
     </div>
 -->
-</section>
+
 <section class="container">
 <div class="col-12">
 	<h2 class="h3 font-weight-bold text-center dark-text mt-4 mb-4">Причины по которым стоит обротится к нам сейчас</h2>
@@ -1460,6 +1470,34 @@ $(window).scroll(function(){
 				omitWeeks: true // Отключаем вывод количества недель
 				});
 				});
+</script>
+<script>
+	
+	function countup(className){
+		var countBlockTop = $("."+className).offset().top;
+		var windowHeight = window.innerHeight;
+		var show = true;
+					
+		$(window).scroll( function (){
+			if(show && (countBlockTop < $(window).scrollTop() + windowHeight)){ 
+				show = false;
+						
+				$('.'+className).spincrement({
+					from: 1,
+					duration: 4000,
+				});
+			}
+		})	
+	}
+
+	
+        $(function() {
+		countup("count", $(".count").text());
+		countup("count2", $(".count2").text());
+		countup("count3", $(".count3").text());
+        });
+				
+   
 </script>	
 </body>
 </html>
